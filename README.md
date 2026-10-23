@@ -2,10 +2,9 @@
 
 A high-performance CLI application and optional Alfred 5 workflow that extracts text from images (including multi-page TIFF, PNG, JPEG) or system clipboard images, formats the output as clean Markdown on standard output, and optionally translates it into target languages using offline machine translation ([Argos Translate](https://github.com/argosopentech/argos-translate)).
 
-```
-> [!NOTE]  
-> This project was developed with help from AI (Gemini 3.7 Flash)
-```
+
+`ℹ️ This project was developed with help from AI (Gemini 3.7 Flash)`  
+
 
 ## Features
 
