@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-image-to-text"
+version = "0.1.0"
+description = "CLI application to convert TIFF and other images to Markdown using OCR."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "argostranslate>=1.11.0",
+    "cyclopts>=5.3.0",
+    "pillow>=13.0.0",
+    "pytesseract>=0.3.13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-mock>=3.17.0",
+]
+
+[project.scripts]
+my-image-to-text = "my_image_to_text.cli:run"
+image-to-text = "my_image_to_text.cli:run"

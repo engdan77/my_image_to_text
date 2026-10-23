@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.edo.ocr.clipboard.markdown</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611001</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611004</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>8D3F376A-4A04-4530-9788-06C05A611002</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611004</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>8D3F376A-4A04-4530-9788-06C05A611003</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611004</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>8D3F376A-4A04-4530-9788-06C05A611004</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611005</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8D3F376A-4A04-4530-9788-06C05A611005</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611006</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string>Copy to Clipboard</string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611007</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Paste to Active Application</string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>8D3F376A-4A04-4530-9788-06C05A611008</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611009</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>8D3F376A-4A04-4530-9788-06C05A611009</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D3F376A-4A04-4530-9788-06C05A611005</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Edo</string>
+	<key>description</key>
+	<string>Extract text from clipboard image or file, optionally translate, and display as Markdown in Alfred Text View.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>OCR Clipboard to Markdown</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>ocr</string>
+				<key>subtext</key>
+				<string>Extract text from clipboard image and display as Markdown (e.g. 'ocr', 'ocr fra', 'ocr nl en', 'ocr nl to en')</string>
+				<key>text</key>
+				<string>OCR Clipboard Image</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611001</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ocrt</string>
+				<key>subtext</key>
+				<string>Extract text and translate via Argos Translate (requires source &amp; target, e.g. 'ocrt nl en')</string>
+				<key>text</key>
+				<string>OCR &amp; Translate Clipboard Image</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611008</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611002</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>OCR Image to Markdown</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611003</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.local/bin:$PATH"
+
+if [ -f "./ocr_clipboard.py" ]; then
+    if command -v uv &gt;/dev/null 2&gt;&amp;1; then
+        uv run ./ocr_clipboard.py "$1"
+    else
+        /usr/bin/python3 ./ocr_clipboard.py "$1"
+    fi
+elif command -v my-image-to-text &gt;/dev/null 2&gt;&amp;1; then
+    args=($1)
+    if [ ${#args[@]} -ge 2 ]; then
+        my-image-to-text --clipboard --lang "${args[0]}" --target-lang "${args[1]}"
+    elif [ ${#args[@]} -eq 1 ]; then
+        if [ -f "${args[0]}" ]; then
+            my-image-to-text "${args[0]}"
+        else
+            my-image-to-text --clipboard --lang "${args[0]}"
+        fi
+    else
+        my-image-to-text --clipboard
+    fi
+else
+    /usr/bin/python3 -m my_image_to_text.cli --clipboard
+fi
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611004</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.local/bin:$PATH"
+
+if [ -f "./ocr_clipboard.py" ]; then
+    if command -v uv &gt;/dev/null 2&gt;&amp;1; then
+        uv run ./ocr_clipboard.py --translate "$1"
+    else
+        /usr/bin/python3 ./ocr_clipboard.py --translate "$1"
+    fi
+elif command -v my-image-to-text &gt;/dev/null 2&gt;&amp;1; then
+    args=($1)
+    if [ ${#args[@]} -ge 2 ]; then
+        my-image-to-text --clipboard --lang "${args[0]}" --target-lang "${args[1]}"
+    elif [ ${#args[@]} -eq 1 ]; then
+        my-image-to-text --clipboard --lang "${OCR_LANG:-eng}" --target-lang "${args[0]}"
+    else
+        my-image-to-text --clipboard --target-lang "${TARGET_LANG:-en}"
+    fi
+else
+    /usr/bin/python3 -m my_image_to_text.cli --clipboard
+fi
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611009</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>behaviour</key>
+				<integer>1</integer>
+				<key>fontmode</key>
+				<integer>0</integer>
+				<key>fontsizing</key>
+				<integer>0</integer>
+				<key>footertext</key>
+				<string>↩ Copy to Clipboard · ⌘↩ Paste to Active App · ⇧↩ New Line · ⎋ Close</string>
+				<key>inputfile</key>
+				<string></string>
+				<key>inputtype</key>
+				<integer>0</integer>
+				<key>loadingtext</key>
+				<string>Processing image with OCR &amp; Translation…</string>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>scriptinput</key>
+				<integer>0</integer>
+				<key>spellchecking</key>
+				<integer>0</integer>
+				<key>stackview</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.text</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611005</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611006</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>8D3F376A-4A04-4530-9788-06C05A611007</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># OCR Clipboard to Markdown &amp; Translation
+
+Extracts text from images (such as multi-page TIFFs, PNGs, screenshots, and copied image files) directly from your clipboard, optionally translates the extracted text via **Argos Translate**, and renders formatted Markdown using Alfred 5's native **Text View** widget.
+
+## Requirements
+
+1. **Alfred 5** (with Powerpack)
+2. **Tesseract OCR**:
+   ```bash
+   brew install tesseract
+   ```
+3. **my-image-to-text** installed globally or via `uv`:
+   ```bash
+   uv tool install .
+   ```
+
+## Workflow Usage
+
+- **`ocr` Keyword**:
+  - `ocr`: OCR clipboard image into Markdown.
+  - `ocr fra`: OCR with French language model.
+  - `ocr nld eng`: OCR Dutch image and translate into English Markdown.
+  - `ocr dutch to english`: Specify source and target translation language.
+  - `ocr to fr`: Translate default OCR text to French.
+- **`ocrt` Keyword** (OCR &amp; Translate - languages required):
+  - `ocrt nl en`: OCR Dutch clipboard and translate into English Markdown (source and target languages required).
+  - `ocrt dutch to english`: Specify full language names for translation.
+- **Hotkey**: Configure a global shortcut (e.g., `⌥⇧O`) to immediately process clipboard image.
+- **Universal Action**: Select an image file in Finder or Alfred and trigger `OCR Image to Markdown`.
+
+## Text View Controls
+
+- **In-place Editing**: You can freely edit and refine the OCR or translated Markdown text directly in Alfred before copying or pasting.
+- `↩` (Enter): Copy edited Markdown text to clipboard.
+- `⌘↩` (Cmd+Enter): Copy edited Markdown text and paste directly into the active frontmost app.
+- `⇧↩` or `⌥↩` (Shift+Enter / Opt+Enter): Insert a new line while editing.
+- `⎋` (Esc): Dismiss the Text View.
+</string>
+	<key>uidata</key>
+	<dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611001</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611002</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611003</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611004</key>
+		<dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611005</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611006</key>
+		<dict>
+			<key>xpos</key>
+			<integer>760</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611007</key>
+		<dict>
+			<key>xpos</key>
+			<integer>760</integer>
+			<key>ypos</key>
+			<integer>260</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611008</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>8D3F376A-4A04-4530-9788-06C05A611009</key>
+		<dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>eng</string>
+				<key>placeholder</key>
+				<string>eng</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Default source language for OCR recognition (e.g. eng, nld, fra, deu, spa).</string>
+			<key>label</key>
+			<string>Default OCR Language</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>OCR_LANG</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>e.g. en, nl, fr, de, es (leave empty for no translation)</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Default target language to translate OCR text into via Argos Translate.</string>
+			<key>label</key>
+			<string>Default Target Language</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>TARGET_LANG</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/edo/my_image_to_text</string>
+</dict>
+</plist>
